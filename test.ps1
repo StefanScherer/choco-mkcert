@@ -36,6 +36,10 @@ mkcert.exe example.org
 $ErrorActionPreference = "Stop"
 Start-Sleep 5
 dir
+cmd /C where mkcert.exe
+mkcert.exe -h
+mkcert.exe example.org
+
 if (-Not (Test-Path example.org.pem)) {
   Write-Error "FAIL: Certificate example.org.pem is missing!"  
 }
