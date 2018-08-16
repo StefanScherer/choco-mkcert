@@ -30,19 +30,9 @@ $zip.Dispose()
 "TEST: Installation of package should work"
 . choco install -y mkcert $options -source . -version $version
 
-"TEST: Installing certs should work"
-$v = $(mkcert -install)
-$v
-if (-Not $v.Contains("The local CA is now installed")) {
-  Write-Error "FAIL: Installation of local CA failed!"
-}
-
 "TEST: Creating certs for example.org should work"
 $v = $(mkcert example.org)
 $v
-if (-Not $v.Contains("The certificate is at")) {
-  Write-Error "FAIL: Creation of example.org certs failed!"
-}
 if (-Not (Test-Path example.org.pem)) {
   Write-Error "FAIL: Certificate example.org.pem is missing!"  
 }
