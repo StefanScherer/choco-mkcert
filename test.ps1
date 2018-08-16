@@ -34,6 +34,8 @@ $zip.Dispose()
 $ErrorActionPreference = "SilentlyContinue"
 mkcert.exe example.org
 $ErrorActionPreference = "Stop"
+Start-Sleep 5
+dir
 if (-Not (Test-Path example.org.pem)) {
   Write-Error "FAIL: Certificate example.org.pem is missing!"  
 }
