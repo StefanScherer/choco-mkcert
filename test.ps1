@@ -1,6 +1,10 @@
 
 "Running tests"
+if (Test-Path env:JAVA_HOME) {
+  rm env:JAVA_HOME  
+}
 $ErrorActionPreference = "Stop"
+
 
 if ($env:APPVEYOR_BUILD_VERSION) {
   # run in CI
