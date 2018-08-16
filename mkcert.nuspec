@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>mkcert</id>
+    <version>1.1.0</version>
+    <title>mkcert</title>
+    <authors>This source code was written by the Go contributors.</authors>
+    <owners>Stefan Scherer</owners>
+    <summary>A simple zero-config tool to make locally trusted development certificates with any names you'd like.</summary>
+    <description>mkcert is a simple tool for making locally-trusted development certificates. It requires no configuration.</description>
+    <projectUrl>https://github.com/FiloSottile/mkcert</projectUrl>
+    <docsUrl>https://github.com/FiloSottile/mkcert/blob/master/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/FiloSottile/mkcert/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/StefanScherer/choco-mkcert</packageSourceUrl>
+    <tags>mkcert locally-trusted development certificates</tags>
+    <licenseUrl>https://github.com/FiloSottile/mkcert/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
