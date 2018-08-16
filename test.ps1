@@ -31,7 +31,9 @@ $zip.Dispose()
 . choco install -y mkcert $options -source . -version $version
 
 "TEST: Creating certs for example.org should work"
+$ErrorActionPreference = "SilentlyContinue"
 $v = $(mkcert example.org)
+$ErrorActionPreference = "Stop"
 $v
 if (-Not (Test-Path example.org.pem)) {
   Write-Error "FAIL: Certificate example.org.pem is missing!"  
