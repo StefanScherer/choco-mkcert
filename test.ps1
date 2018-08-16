@@ -32,7 +32,7 @@ $zip.Dispose()
 
 "TEST: Creating certs for example.org should work"
 $ErrorActionPreference = "SilentlyContinue"
-mkcert example.org
+mkcert.exe example.org
 $ErrorActionPreference = "Stop"
 if (-Not (Test-Path example.org.pem)) {
   Write-Error "FAIL: Certificate example.org.pem is missing!"  
