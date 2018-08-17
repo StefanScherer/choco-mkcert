@@ -29,8 +29,7 @@ Created a new certificate valid for the following names 📜
 
 The certificate is at "./example.com+5.pem" and the key at "./example.com+5-key.pem" ✅
 ```
-</code>
-  </description>
+    </description>
     <projectUrl>https://github.com/FiloSottile/mkcert</projectUrl>
     <docsUrl>https://github.com/FiloSottile/mkcert/blob/master/README.md</docsUrl>
     <bugTrackerUrl>https://github.com/FiloSottile/mkcert/issues</bugTrackerUrl>
