@@ -1,7 +1,7 @@
 $packageName = 'mkcert'
-$url = 'https://github.com/FiloSottile/mkcert/releases/download/v1.1.0/mkcert-v1.1.0-windows-amd64.exe'
+$url = 'https://github.com/FiloSottile/mkcert/releases/download/v1.1.1/mkcert-v1.1.1-windows-amd64.exe'
 $url64 = $url
-$checksum = 'd445822464cfccb3ce2cd3f3c52949ea142500ae4b9eca0b5f4c540c93370c84'
+$checksum = 'edc274a5d8b0413699b4b4d5945ec2acd21e711edf30614825fe7f0f5e71f0e9'
 $checksum64 = $checksum
 $checksumType = 'sha256'
 $checksumType64 = $checksumType
